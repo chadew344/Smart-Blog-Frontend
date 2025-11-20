@@ -1,8 +1,9 @@
-import { Link, Outlet, useNavigate } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { useAuth } from "../context/authContext";
 
 const Layout = () => {
-  const { user, setUser } = useAuth();
+  // const { user, setUser } = useAuth();
+  const { user } = useAuth();
 
   return (
     <div className="min-h-screen flex flex-col">

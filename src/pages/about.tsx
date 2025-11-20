@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { useAuth } from "../context/authContext";
 
 const About = () => {
-  const { user, setUser } = useAuth();
+  // const { user, setUser } = useAuth();
+  const { user } = useAuth();
 
   useEffect(() => {
     console.log(user);
